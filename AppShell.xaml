@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Module07DataAccess.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Module07DataAccess"
+    xmlns:views="clr-namespace:Module07DataAccess.View"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Module07DataAccess">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="ViewPersonal"
+        ContentTemplate="{DataTemplate views:ViewPersonal}"
+        Route="ViewPersonal"/>
+
+</Shell>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Module07DataAccess.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="berss.jpg"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                Text="Welcome, Peasant!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me" 
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Fill" />
+
+            <Label x:Name="ConnectionStatusLabel"
+                   Text=""
+                   FontSize="18"
+                   TextColor="Red"
+                   HorizontalOptions="Center"/>
+
+            <Button Text="Test Connection"
+                    Clicked="OnTestConnectionClicked"
+                    HorizontalOptions="Fill"/>
+            
+            
+            <Button Text="View Personal"
+                    Clicked="OpenViewPersonal"
+                    HorizontalOptions="Fill"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
